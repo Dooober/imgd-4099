@@ -1,0 +1,5 @@
+# Assignment 2 - Video Processing
+
+For this assignment I wanted to explore creating a "glitch" effect with live video. I wanted the glitches to tear the screen horizontally with different sizes of waves. I did not care too much about changing the color of the video, or utilizing a back buffer with video feedback. I just wanted to create a screen tearing effect that looks similar to glitches in old camera footage.
+
+To do this, I first created two sizes of waves using a simplex noise function. The larger waves occur less frequently at a higher strength. I then added smaller waves that occur constantly at a smaller strength. I then subtracted these waves from the x position of the video feed, creating an effect where horizontal lines from the video move at different rates. After this, I created some interference by mixing the colors of the distorted video with random values and noise. Combining interference allowed the output to look more like a "glitch" instead of a moving video.
